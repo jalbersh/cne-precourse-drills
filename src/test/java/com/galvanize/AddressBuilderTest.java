@@ -25,10 +25,11 @@ public class AddressBuilderTest {
     }
 
     private AddressBuilder setFields(AddressBuilder addressBuilder) {
-        addressBuilder.street("Street1");
-        addressBuilder.city("City1");
-        addressBuilder.state("State1");
-        addressBuilder.zip("Zip1");
+        addressBuilder
+                .street("Street1")
+                .city("City1")
+                .state("State1")
+                .zip("Zip1");
         return addressBuilder;
     }
 
