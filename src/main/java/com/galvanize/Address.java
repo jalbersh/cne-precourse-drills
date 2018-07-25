@@ -1,7 +1,7 @@
 package com.galvanize;
 
 /**
- * Created by jalbersh on 3/4/17.
+ * Created by jalbersh on 7/25/18.
  */
 public class Address {
     private String street;
@@ -19,7 +19,6 @@ public class Address {
         this.zip = zip;
     }
 
-    // builders are betters than setters
     public Address(AddressBuilder builder) {
         this.street = builder.getStreet();
         this.city = builder.getCity();
@@ -27,7 +26,6 @@ public class Address {
         this.zip = builder.getZip();
     }
 
-    // getters
     public String getStreet() {
         return street;
     }
@@ -44,7 +42,6 @@ public class Address {
         return zip;
     }
 
-    // setters, as instructed
     public void setStreet(String street) {
         this.street = street;
     }
@@ -83,7 +80,6 @@ public class Address {
         return result;
     }
 
-    // toString, as instructed
     @java.lang.Override
     public java.lang.String toString() {
         return street + ", " + city + ", " + state + " " + zip;

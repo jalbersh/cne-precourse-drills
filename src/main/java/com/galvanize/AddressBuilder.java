@@ -1,10 +1,9 @@
 package com.galvanize;
 
 /**
- * Created by jalbersh on 3/4/17.
+ * Created by jalbersh on 7/25/18.
  */
 public class AddressBuilder {
-    // Builders are better than setters
     private String street;
     private String city;
     private String state;
@@ -33,7 +32,7 @@ public class AddressBuilder {
     }
 
     public Address build() {
-        return new Address(this);
+        return new Address(street, city, state, zip);
     }
 
     public String getStreet() {

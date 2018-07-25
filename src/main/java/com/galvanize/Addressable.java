@@ -3,7 +3,7 @@ package com.galvanize;
 import java.util.List;
 
 /**
- * Created by jalbersh on 3/4/17.
+ * Created by jalbersh on 7/25/18.
  */
 public interface Addressable {
     public List<Address> getAddresses();
